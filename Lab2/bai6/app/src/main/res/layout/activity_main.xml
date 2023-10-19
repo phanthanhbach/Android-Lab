@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/id"
+        android:id="@+id/text1">
+    </TextView>
+
+    <EditText
+        android:id="@+id/nhapma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1">
+
+    </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/full_name"
+        android:id="@+id/text2"
+        android:layout_below="@id/nhapma">
+    </TextView>
+
+    <EditText
+        android:id="@+id/nhapten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text2">
+    </EditText>
+
+    <CheckBox android:id="@+id/checkbox_manager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/is_manager"
+        android:layout_below="@+id/nhapten" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/add"
+        android:backgroundTint="#ccc"
+        android:textColor="@color/black"
+        android:layout_below="@id/checkbox_manager"
+        android:id="@+id/buttonthem">
+    </Button>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#4F94CD"
+        android:layout_below="@id/buttonthem"
+        android:id="@+id/thanhchan">
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/thanhchan">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

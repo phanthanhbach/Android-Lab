@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/food_name"
+        android:id="@+id/text_Name"/>
+
+    <EditText
+        android:id="@+id/get_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/text_Name" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/thumbnail"
+        android:id="@+id/thumbnail"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/get_Name"/>
+    <Spinner
+        android:id="@+id/spn_item_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/get_Name"
+        android:layout_toEndOf="@id/thumbnail"
+        android:layout_marginTop="10dp"
+        android:spinnerMode="dialog" />
+
+    <CheckBox
+        android:id="@+id/check_promotion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/promo"
+        android:layout_below="@id/spn_item_category"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/buttonthem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/check_promotion"
+        android:text="@string/add"
+        android:backgroundTint="#ccc"
+        android:textColor="@color/black"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"/>
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonthem"
+        android:numColumns="2"
+        android:id="@+id/grid_view"/>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_margin="20px"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/grid_layout"
+        android:background="@drawable/bunbo">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:background="#55000000"
+            >
+            <TextView
+                android:id="@+id/name_grid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hello"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                />
+
+            <ImageView
+                android:id="@+id/img_grid"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
